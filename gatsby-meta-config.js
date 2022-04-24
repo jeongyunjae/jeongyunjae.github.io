@@ -6,7 +6,7 @@ module.exports = {
   ogImage: `/og-image.png`, // Path to your in the 'static' folder
   comments: {
     utterances: {
-      repo: ``, // `zoomkoding/zoomkoding-gatsby-blog`,
+      repo: `jeongyunjae/jeongyunjae.github.io`,
     },
   },
   ga: '0', // Google Analytics Tracking ID
@@ -15,12 +15,12 @@ module.exports = {
     bio: {
       role: `개발자`,
       description: ['시각적 표현을 즐기는', '비즈니스 가치를 두는', '이로운 것을 만드는'],
-      thumbnail: 'sample.png', // Path to the image in the 'asset' folder
+      thumbnail: 'yunjae.gif', // Path to the image in the 'asset' folder
     },
     social: {
-      github: ``, // `https://github.com/zoomKoding`,
-      linkedIn: ``, // `https://www.linkedin.com/in/jinhyeok-jeong-800871192`,
-      email: ``, // `zoomkoding@gmail.com`,
+      github: `https://github.com/jeongyunjae`,
+      linkedIn: `https://www.linkedin.com/in/%EC%9C%A4%EC%9E%AC-%EC%A0%95-0b562817a/`,
+      email: `yunjae2295@naver.com`,
     },
   },
 

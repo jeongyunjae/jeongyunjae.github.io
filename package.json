@@ -38,7 +38,7 @@
     "@emotion/react": "11.9.0",
     "@emotion/styled": "11.8.1",
     "gatsby-plugin-react-helmet": "5.12.1",
-    "gh-pages": "^3.2.3",
+    "gh-pages": "3.2.3",
     "prettier": "2.2.1"
   },
   "keywords": [
@@ -51,7 +51,7 @@
     "build": "gatsby clean && gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "deploy": "gatsby clean && gatsby build && gh-pages -d public",
+    "deploy": "gatsby build && gh-pages -d public -b gh-pages",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
