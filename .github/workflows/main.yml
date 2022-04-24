@@ -23,4 +23,11 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_PAT: ${{ secrets.API_KEY }}
           BUILD_DIR: 'public/'
+      
+      - name: user check
+        run: git config --global user.email "yunjae2295@naver.com"
+      
+      - name: useer name
+        run: git config --global user.name "jeongyunjae"
+
 
