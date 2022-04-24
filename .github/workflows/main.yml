@@ -16,6 +16,12 @@ jobs:
       - name: packages install
         run: yarn install
 
+      - name: user check
+        run: git config --global user.email "yunjae2295@naver.com"
+      
+      - name: user name
+        run: git config --global user.name "jeongyunjae"
+
       - name: test
         run: yarn deploy
         env:
@@ -24,10 +30,5 @@ jobs:
           GH_PAT: ${{ secrets.API_KEY }}
           BUILD_DIR: 'public/'
       
-      - name: user check
-        run: git config --global user.email "yunjae2295@naver.com"
-      
-      - name: useer name
-        run: git config --global user.name "jeongyunjae"
 
 
