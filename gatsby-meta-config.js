@@ -9,7 +9,7 @@ module.exports = {
       repo: `jeongyunjae/jeongyunjae.github.io`,
     },
   },
-  ga: '0', // Google Analytics Tracking ID
+  ga: '0', // Google Analytics Tracking ID !
   author: {
     name: `정윤재`,
     bio: {
