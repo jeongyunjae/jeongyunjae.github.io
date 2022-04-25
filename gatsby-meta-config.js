@@ -3,7 +3,7 @@ module.exports = {
   description: `윤재의 개발로그`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://www.yunjaaae.com`,
-  ogImage: `/og-image.png`, // Path to your in the 'static' folder
+  ogImage: `/og-image.png`, // Path to your the 'static' folder
   comments: {
     utterances: {
       repo: `jeongyunjae/jeongyunjae.github.io`,
