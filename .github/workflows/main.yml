@@ -1,4 +1,4 @@
-name: gatsby deploy
+name: gatsby deploys
 
 on:
   push:
