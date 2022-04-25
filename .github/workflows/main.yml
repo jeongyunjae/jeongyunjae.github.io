@@ -21,7 +21,7 @@ jobs:
         env:
           GH_API_KEY: ${{ secrets.API_KEYS }}
 
-	  - name: CNAME copy
+	    - name: CNAME copy
         run: cp CNAME public/
 
       - name: deploy
