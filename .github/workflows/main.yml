@@ -5,24 +5,28 @@ on:
     branches: master
 
 jobs:
-  steps:
-    - name: checkout code
-      uses: actions/checkout@v2
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
 
-    - name: packages install
-      run: yarn
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
 
-    - name: gatsby build
-      run: yarn build
-      env:
-        GH_API_KEY: ${{ secrets.API_KEYS }}
+      - name: packages install
+        run: yarn
 
-    - name: CNAME copy
-      run: cp CNAME public/
+      - name: gatsby build
+        run: yarn build
+        env:
+          GH_API_KEY: ${{ secrets.API_KEYS }}
 
-    - name: deploy
-      uses: maxheld83/ghpages@v0.2.1
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        GH_PAT: ${{ secrets.API_KEYS }}
-        BUILD_DIR: 'public/'
+      - name: CNAME copy
+        run: cp CNAME public/
+
+      - name: deploy
+        uses: maxheld83/ghpages@v0.2.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: ${{ secrets.API_KEYS }}
+          BUILD_DIR: 'public/'
