@@ -1,1 +1,1 @@
-{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"Gatsby 테마로 GitHub Blog 만들기","categories":"블로그 featured"},"fields":{"slug":"/gatsby-github-blog/"}}},{"node":{"frontmatter":{"title":"쉽고 빠르게 나만의 개츠비(Gatsby) 블로그 만들기","categories":"블로그 featured"},"fields":{"slug":"/gatsby-starter-zoomkoding-introduction/"}}}]}}}
+{"data":{"allMarkdownRemark":{"edges":[{"node":{"frontmatter":{"title":"파이썬 크롤링과 리액트로 지도 서비스 만들기(feat. 네이버 지도)","categories":"블로그 featured"},"fields":{"slug":"/파이썬-크롤링과-리액트로-지도서비스-만들기/"}}}]}}}
