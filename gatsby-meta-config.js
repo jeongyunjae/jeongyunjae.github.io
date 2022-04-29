@@ -26,7 +26,7 @@ module.exports = {
 
   // metadata for About Page
   about: {
-    이력: [
+    timestamps: [
       // =====       [Timestamp Sample and Structure]      =====
       // ===== 🚫 Don't erase this sample (여기 지우지 마세요!) =====
       {
@@ -48,7 +48,7 @@ module.exports = {
       },
     ],
 
-    프로젝트: [
+    projects: [
       // =====        [Project Sample and Structure]        =====
       // ===== 🚫 Don't erase this sample (여기 지우지 마세요!)  =====
       {
