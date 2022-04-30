@@ -80,6 +80,16 @@ module.exports = {
           demo: 'https://brwnie.kr',
         },
       },
+      {
+        title: '무인매장 지도',
+        description:
+          '비즈니스적으로 실제 무인매장이 얼마나 있고, 어떤 종류가 있는지를 시각적으로 파악하기 위해 계획한 프로젝트입니다. 서비스 홍보물 배포 알바생분들이 지정한 포인트별로 길을 찾아갈 수 있도록 기능하며, 서비스 현장에 잘 도착할 수 있도록 브라우니 크루분들의 길 안내를 도웁니다. 또한 집 주변 무인매장이 어디에, 얼마나, 어떤게 있는지 궁금한 분들에게 질좋은 인사이트를 제공해드리기 위한 기능으로 만들었습니다.',
+        techStack: ['react', 'naver-map', 'express'],
+        thumbnailUrl: 'map.png',
+        links: {
+          demo: 'https://brwnie.kr/map',
+        },
+      },
     ],
   },
 };
