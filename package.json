@@ -27,18 +27,20 @@
     "gatsby-theme-material-ui": "^5.1.0",
     "gatsby-transformer-remark": "^5.9.1",
     "gatsby-transformer-sharp": "^4.9.0",
+    "gh-pages": "3.2.3",
     "prismjs": "^1.24.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-rotating-text": "^1.4.1",
     "sass": "^1.43.4",
-    "gh-pages": "3.2.3",
     "typeface-montserrat": "^1.1.13"
   },
   "devDependencies": {
     "@emotion/react": "11.9.0",
     "@emotion/styled": "11.8.1",
+    "gatsby-plugin-feed": "4.13.0",
     "gatsby-plugin-react-helmet": "5.12.1",
+    "gatsby-plugin-sitemap": "5.13.0",
     "prettier": "2.2.1"
   },
   "keywords": [
@@ -51,8 +53,9 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "copy": "cp CNAME public/",
+    "html" : "cp naverab2087538321ca6a63a01479a9184bc7.html public/",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "deploy": "gatsby build && npm run copy && gh-pages -d public -b gh-pages",
+    "deploy": "gatsby build && npm run copy && && npm run html && gh-pages -d public -b gh-pages",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
