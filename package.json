@@ -55,7 +55,7 @@
     "copy": "cp CNAME public/",
     "html" : "cp naverab2087538321ca6a63a01479a9184bc7.html public/",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "deploy": "gatsby build && npm run copy && && npm run html && gh-pages -d public -b gh-pages",
+    "deploy": "gatsby build && npm run copy && npm run html && gh-pages -d public -b gh-pages",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
