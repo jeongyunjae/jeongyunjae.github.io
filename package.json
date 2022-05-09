@@ -53,7 +53,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "copy": "cp CNAME public/",
-    "html" : "cp naverab2087538321ca6a63a01479a9184bc7.html public/",
+    "html" : "cp naver287ca7922a3c721d8c5bb46763cf54c0.html public/",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "deploy": "gatsby build && npm run copy && npm run html && gh-pages -d public -b gh-pages",
     "start": "npm run develop",
