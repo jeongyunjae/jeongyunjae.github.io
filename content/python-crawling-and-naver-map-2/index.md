@@ -1,6 +1,6 @@
 ---
 emoji: 🗺
-title: 파이썬 크롤링과 리액트로 지도 서비스 만들기(feat. 네이버 지도) - 2탄
+title: 네이버지도로 지도 서비스 만들기 - 2탄
 date: '2022-05-28 14:10'
 author: 윤로그
 tags: 블로그 github-pages gatsby
@@ -70,7 +70,7 @@ pip install flask beautifulsoup4 selenium webdriver-manager
 
 ### app.py
 
-```
+```python
 import argparse
 from flask import Flask
 
@@ -148,6 +148,8 @@ Iframe은 HTML inline Frame 요소로, 하나의 사이트에 2개 이상의 페
 
 <br />
 
+
+### 자세한 코드는 [여기](https://github.com/jeongyunjae/yonsei-univ-matjip/tree/master/backend-crawling)에
 ```toc
 
 ```

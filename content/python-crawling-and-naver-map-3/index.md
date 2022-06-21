@@ -1,6 +1,6 @@
 ---
 emoji: 🗺
-title: 파이썬 크롤링과 리액트로 지도 서비스 만들기(feat. 네이버 지도) - 3탄
+title: 네이버지도로 지도 서비스 만들기 - 3탄
 date: '2022-06-12 16:10'
 author: 윤로그
 tags: 블로그 github-pages gatsby
@@ -52,7 +52,7 @@ categories: 블로그 featured
 <br />
 
 ### get_driver (크롬브라우저 실행)
-```
+```python
 # module import
 from selenium import webdriver
 from webdriver_manager.chrome import ChromeDriverManager
@@ -85,7 +85,7 @@ def get_driver():
 <br />
 
 ### search_place (장소 검색)
-```
+```python
 # @param driver: 생성했던 driver
 # @param search_text: 검색할 키워드
 
@@ -105,7 +105,7 @@ def search_place(driver:WebDriver, search_text: str):
 <br />
 
 ### next_page_move (페이지 이동 및 마지막 페이지 체크)
-```
+```python
 # @param driver: 생성했던 driver
 
 def next_page_move(driver:WebDriver):
@@ -134,7 +134,7 @@ def next_page_move(driver:WebDriver):
 
 
 ### to_search_iframe 함수 (검색 iframe으로 이동)
-```
+```python
 # @param driver: 생성했던 driver
 
 def to_search_iframe(driver:WebDriver):
@@ -149,7 +149,7 @@ Iframe 전환을 진행합니다.
 
 
 ### get_store_data 함수 (매장정보 추출)
-```
+```python
 
 # @param driver: 생성했던 driver
 # @paramscroll_container: 검색결과 스크롤 영역
@@ -203,7 +203,7 @@ def get_store_data(driver:WebDriver, scroll_container: WebElement, file: TextIOW
 <br />
 
 ### naver_crawl 함수 (메인 실행 함수)
-```
+```python
 def naver_crawl():
   # 매장정보를 저장할 파일 오픈
   list_file = open('src/list.csv','a',encoding='utf-8')
@@ -273,6 +273,7 @@ name|address
 현재 저장된 형태인 csv파일 형태에서 실제 db의 테이블로 저장하는 과정을 담아보겠습니다
 감사합니다
 
+### 자세한 코드는 [여기](https://github.com/jeongyunjae/yonsei-univ-matjip/tree/master/backend-crawling)에
 ```toc
 
 ```
