@@ -48,7 +48,7 @@ module.exports = {
       },
       {
         date: '2020.12 ~',
-        activity: '하이어엑스 프론트엔드 개발자',
+        activity: 'Higherx Frontend Developer',
       },
     ],
 
@@ -81,9 +81,9 @@ module.exports = {
         },
       },
       {
-        title: '무인매장 지도',
+        title: '우리동네 무인매장 지도',
         description:
-          '브라우니 크루 및 홍보물 배포 알바생분들이 목적지로 잘 찾아갈 수 있게 기획된 프로젝트입니다. 또한 집 주변 무인매장이 어디에, 얼마나, 어떤게 있는지 궁금한 동네 주민에게 인사이트를 제공해드리기 위해 만들어졌습니다.',
+          '집 주변 무인매장이 어디에, 얼마나, 어떤게 있는지 궁금한 동네 주민에게 인사이트를 제공해드리기 위해 만들어졌습니다.',
         techStack: ['react', 'naver-map', 'express'],
         thumbnailUrl: 'map.png',
         links: {
