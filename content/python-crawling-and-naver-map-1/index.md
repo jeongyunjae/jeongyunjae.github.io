@@ -4,7 +4,7 @@ title: 네이버지도로 지도 서비스 만들기 - 1탄
 date: '2022-05-01 13:10'
 author: 윤로그
 tags: 블로그 github-pages gatsby
-categories: 블로그 featured
+categories: 지도서비스
 ---
 
 ## 배경
