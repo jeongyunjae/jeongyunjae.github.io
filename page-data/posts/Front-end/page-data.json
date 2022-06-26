@@ -1,0 +1,5 @@
+{
+    "componentChunkName": "component---src-templates-category-template-js",
+    "path": "/posts/Front-end",
+    "result": {"pageContext":{"currentCategory":"Front-end","categories":["All","Front-end","지도서비스"],"edges":[{"node":{"id":"ef27d422-4d84-5ac0-9401-c0cc71350f96","excerpt":"개요 최근에 웹 구현관련 코딩테스트 문제에서 시맨틱태그를 다루는 걸 접했는데, 생각보다 의미론적이나, 사용형태에서 몰랐던 부분이 여럿 있었습니다.\n또한 여러 회사의 프론트엔드 채용공고에서도 시맨틱태그 관련 사항들을 왕왕 접하게 되어 시맨틱태그를 디테일하게 사용해보면 어떨까해서 포스팅하게 되었습니다. 시맨틱 태그란? 시맨틱 태그란 말그대로 의미의(semantic) 태그(tag)입니다. 즉, div, span처럼 여타 다른 태그들과 달리 태그만 보고도 이게 뭐에 쓰인\n태그인지 알 수 있는 태그를 말합니다. \n흔히 볼 수 있는 시맨틱 태그 레이아웃 이미지\n\n 왜 써야할까? 시맨틱 태그를 왜 써야할까요? 일반적으로 HTML태그로 레이아웃을 잡을 때, div태그로 나누면서 해도 코드레벨에서 전혀 문제가 되지 않습니다. 또한\ndiv태그로 작성하면 내리 블록형태로 코드를 작성해나가면서, 레이아웃 형태에 큰 고민없이도 뷰를 보일 수 있죠.\n하지만 시맨틱 태그를 사용하면 크게 2가지 이점이 있습니…","fields":{"slug":"/semantic-tag/"},"frontmatter":{"categories":"Front-end","title":"시맨틱 태그 야무지게 써보기","date":"June 26, 2022"}},"next":{"fields":{"slug":"/python-crawling-and-naver-map-3/"}},"previous":null}]}},
+    "staticQueryHashes": ["1073350324","1956554647","2938748437"]}
