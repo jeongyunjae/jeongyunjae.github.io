@@ -300,7 +300,7 @@ store_name|address|naver_category
 현재 저장된 형태인 csv파일 형태에서 실제 db의 테이블로 저장하는 과정을 담아보겠습니다
 감사합니다
 
-### 자세한 코드는 [여기](https://github.com/jeongyunjae/yonsei-univ-matjip/tree/master/backend-crawling)에
+### 자세한 코드는 [여기](https://github.com/jeongyunjae/yonsei-univ-matjip)에
 
 ```toc
 

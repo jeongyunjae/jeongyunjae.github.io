@@ -7,7 +7,7 @@ tags: 블로그 github-pages gatsby
 categories: 지도서비스
 ---
 
-안녕하세요:) 이번 포스팅에서는 파이썬 라이브러리인 플라스크에서 동작하는 네이버 지도 크롤링 서버 환경을 구축해보려고 합니다. 또한 지난 소개(1탄) 포스팅에서 말씀드린 것처럼, 크롤링 진행시 고려해보면 좋은 덕목과 크롤러 시점에서 본 네이버 지도의 특징을 소개해보려고 합니다.  
+안녕하세요:) 이번 포스팅에서는 파이썬 라이브러리인 플라스크에서 동작하는 네이버 지도 크롤링 서버 환경을 구축해보려고 합니다. 또한 지난 소개(1탄) 포스팅에서 말씀드린 것처럼, 크롤링 진행시 고려해보면 좋은 덕목과 크롤러 시점에서 본 네이버 지도의 특징을 소개해보려고 합니다.
 
 <br />
 <br />
@@ -16,7 +16,6 @@ categories: 지도서비스
 
 (이 포스팅 시리즈는 mac os를 기준으로 작성되었습니다.)
 <br />
-
 
 먼저, 파이썬이 설치되어 있지 않으면 파이썬을 설치해줍니다.
 (침고 링크: https://programmers.co.kr/learn/courses/2/lessons/48)
@@ -28,7 +27,6 @@ python --version
 
 <br />
 <br />
-
 
 - 파이썬 가상환경 구축
   해당 프로젝트에서만 귀속되게 라이브러리를 설치하기 위해 venv가상환경을 구축해 줍니다.
@@ -42,7 +40,6 @@ source 폴더이름/bin/activate //접속
 <br />
 <br />
 
-
 - 필요한 라이브러리 설치
   크롤링에 필요한 라이브러리 목록입니다.
   현재는 필요한 라이브러리가 몇가지 없어 직접 pip install명령어를 통해 설치를 진행하지만 db연결, 스케줄러 설정 등이 추가된다면 설치해야할 라이브러리가 많아집니다.
@@ -54,7 +51,6 @@ pip install flask beautifulsoup4 selenium webdriver-manager
 
 <br />
 <br />
-
 
 ### 설명
 
@@ -90,6 +86,7 @@ if __name__ == '__main__':
 <br />
 
 In terminal
+
 ```
 python app.py
 ```
@@ -130,7 +127,6 @@ Iframe은 HTML inline Frame 요소로, 하나의 사이트에 2개 이상의 페
 
 ![iframeDescription.png](iframeDescription.png)
 
-
 네이버 지도에서는 현재 위 사진처럼 총 2개의 Iframe이 삽입되어 있습니다.
 
 <br />
@@ -148,8 +144,8 @@ Iframe은 HTML inline Frame 요소로, 하나의 사이트에 2개 이상의 페
 
 <br />
 
+### 자세한 코드는 [여기](https://github.com/jeongyunjae/yonsei-univ-matjip)에
 
-### 자세한 코드는 [여기](https://github.com/jeongyunjae/yonsei-univ-matjip/tree/master/backend-crawling)에
 ```toc
 
 ```
