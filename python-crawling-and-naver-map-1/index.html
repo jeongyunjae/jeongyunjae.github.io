@@ -83,29 +83,28 @@
 <p>연세대학교 신촌캠퍼스 맛집 지도 🗺</p>
 </blockquote>
 <ol>
-<li>네이버 지도(v5)에 ‘연세대학교 신촌캠퍼스 맛집’을 검색하고 데이터를 추출하는 플라스크(Flask) 크롤링서버를 구축한다.</li>
-<li>크롤링서버에서 추출한 데이터를 데이터베이스에 저장한다.</li>
-<li>프론트의 요청에 맞게 API서버에서는, 지도 데이터를 프론트에 전달한다.</li>
+<li>네이버 지도(v5)에 ‘연세대학교 신촌캠퍼스 맛집’을 검색하고 데이터를 추출하는 플라스크(Flask)크롤링서버를 구축한다.</li>
+<li>추출한 데이터를 프론트의 요청에 맞게 REST-API로 전달한다.</li>
 <li>전달받은 지도 데이터를 기능에 맞게 화면에 보여준다.</li>
 </ol>
 <h2 id="2-개발-환경-구성" style="position:relative;"><a href="#2-%EA%B0%9C%EB%B0%9C-%ED%99%98%EA%B2%BD-%EA%B5%AC%EC%84%B1" aria-label="2 개발 환경 구성 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. 개발 환경 구성</h2>
 <p><span
       class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 483px; "
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 465px; "
     >
       <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 70.55555555555556%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB20lEQVQ4y42UfW/aMBCH+f7fZeu6qX92mtZqEqir9lJaihAiUIW8EZIQJwHHfiqbBbkMpJ50cXS2fznfPU4Px9q2RWtNnuf4vk8URQRBQBiGZFlm54x14ynrKaWskJSS9XpNXdd2nE6neJ7HZDJhPp9TFMX7BNM0ZbFYEMcxVVXZoBEty9KOxk3cuCt4zm2GnYjJrNtg4q4fi3WmHbcZmsdWKibLmucXQdWow8Jjc8W0KVUcocMAFQboKEQGy71gJiS/vYpfs4qkkGePdYjvO4j/9Zrx5QXTqy+MPn0k/na9Fywbzd04pf+UkAll8ztZI6chWkryuwHpj1vim+8ktzdsBv29oCnjSyyY+jmy7TJ5Wx/tZv3vvRUCREmymLPLM1RZ0uu+qNodoiycUiv+lzxtVdOgtNOUzoQo7cR2M6dJ+jSre+rkJ3U8YLuZIaWildIyaztvjqa1RcywbAUNXwaX1WqFN5uRrjesgz8shh/whpf4z1cE48+k/j3FRlBVwjJp+DXsJkli9x7AFkIcJqIoZCcV7BJUMUSLMVQTqEbobfjmmGa9uRDL5dJe0Y6AHid527tSmrZV1ju4j8F2GbUZnuNNqZbRaMTT46O9zw8Pf+2PwmXU/UiX4Su7iD4Qi/G8AgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+    style="padding-bottom: 58.333333333333336%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAACXBIWXMAAAsTAAALEwEAmpwYAAABaElEQVQoz5WTbW/aMBSF8///TdUXbZOAMU2M9kPV7cMETUgakhCgJMtMILET/FR1h4AJ0nKlI1u6PsfnXvtaxaxLFrYRUYc/QYs87iKiNjK5Zb0SVFVNnucsl0uEEGZf1TV5liHu+iy6HeZf28w6LZb9HpYIW4x/XxINrs06cz4xtW9Yz3+QJnNKKYnjmDAMiaLIQCrFIp4g+j2CL58Z3VzxeHnB3953LL16hNJFr2zy558gPZAum7VHY2hN6bmokUPljgxKx8bSwEa/nQmCAM974skPUFX9j6dPwuT/g/WW0BSywvUnFKVESrkjnBI6cYn1mpSqZjCR/Aoqxgu1reiAvKv0A4Kl2vAwyrgbJLjTwqjpPdI5YQRVrbm3E749RHiz4sDBuWFtyXmpSfONcbtfclMPjwruEtt3Ouzf8R+j33d4zEVRFGRZRpqmZlKSJEEp1eywycGrmOM4DIdDfN/Htm0zfk2CL3+Vomvu/fhjAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
   ></span>
   <img
         class="gatsby-resp-image-image"
         alt="structure.png"
         title="structure.png"
-        src="/static/4f1dd55643722792fba018840d60caa9/77a9e/structure.png"
-        srcset="/static/4f1dd55643722792fba018840d60caa9/e9ff0/structure.png 180w,
-/static/4f1dd55643722792fba018840d60caa9/f21e7/structure.png 360w,
-/static/4f1dd55643722792fba018840d60caa9/77a9e/structure.png 483w"
-        sizes="(max-width: 483px) 100vw, 483px"
+        src="/static/2c0f819fa2abefe3cac243345ff930bc/9ff85/structure.png"
+        srcset="/static/2c0f819fa2abefe3cac243345ff930bc/e9ff0/structure.png 180w,
+/static/2c0f819fa2abefe3cac243345ff930bc/f21e7/structure.png 360w,
+/static/2c0f819fa2abefe3cac243345ff930bc/9ff85/structure.png 465w"
+        sizes="(max-width: 465px) 100vw, 465px"
         style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
         loading="lazy"
         decoding="async"
@@ -115,23 +114,21 @@
 <li>
 <p>Back-end</p>
 <ul>
-<li>크롤링 서버: Python Flask</li>
-<li>API 서버: express.js</li>
-<li>DB: sqlite3</li>
+<li>Flask</li>
 </ul>
 </li>
 <li>
 <p>Front-end</p>
 <ul>
 <li>React</li>
-<li>typescript</li>
+<li>Typescript</li>
 </ul>
 </li>
 </ul>
-<p>백엔드는 2개의 서버로 이루어집니다. 실제 네이버 지도(v5)검색 데이터를 크롤링하기 위한 파이썬 서버인 Flask와 프론트에서 요청할 지도 데이터를 CRUD할 API 서버로 이루어집니다.
-프론트엔드는 자바스크립트 기반 프레임워크인 리액트로 구성되고, 언어는 타입스크립트로 작성합니다.</p>
-<p>다음 포스팅에서는 크롤링 서버 환경을 구축하고 크롤링시에 알아두면 좋은 정보들을 실제 코드 작성이전에 소개드리겠습니다.</p>
-<h3 id="자세한-코드는-여기에" style="position:relative;"><a href="#%EC%9E%90%EC%84%B8%ED%95%9C-%EC%BD%94%EB%93%9C%EB%8A%94-%EC%97%AC%EA%B8%B0%EC%97%90" aria-label="자세한 코드는 여기에 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>자세한 코드는 <a href="https://github.com/jeongyunjae/yonsei-univ-matjip/tree/master/backend-crawling">여기</a>에</h3>
+<p>백엔드는 네이버 지도를 크롤링하여 데이터를 저장하는 동시에, 프론트엔드와 REST-API로 통신할 FLASK 서버를 준비합니다.
+프론트엔드는 자바스크립트 기반 프레임워크인 리액트(React)로 구성되고, 언어는 타입스크립트로 작성합니다.</p>
+<p>다음 포스팅에서는 크롤링 서버 환경을 구축하고 크롤링시에 알아두면 좋은 정보들을 실제 코드 작성 이전에 소개드리겠습니다.</p>
+<h3 id="자세한-코드는-여기에" style="position:relative;"><a href="#%EC%9E%90%EC%84%B8%ED%95%9C-%EC%BD%94%EB%93%9C%EB%8A%94-%EC%97%AC%EA%B8%B0%EC%97%90" aria-label="자세한 코드는 여기에 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>자세한 코드는 <a href="https://github.com/jeongyunjae/yonsei-univ-matjip">여기</a>에</h3>
 <div class="table-of-contents">
 <ul>
 <li>
