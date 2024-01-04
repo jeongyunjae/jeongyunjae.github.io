@@ -7,6 +7,7 @@
   "dependencies": {
     "@mui/icons-material": "^5.1.0",
     "@mui/material": "^5.1.0",
+    "babel-plugin-styled-components": "2.1.4",
     "gatsby": "^4.9.3",
     "gatsby-plugin-advanced-sitemap": "^2.0.0",
     "gatsby-plugin-google-analytics": "^4.9.0",
@@ -16,6 +17,7 @@
     "gatsby-plugin-robots-txt": "^1.7.0",
     "gatsby-plugin-sass": "^5.9.0",
     "gatsby-plugin-sharp": "^4.9.1",
+    "gatsby-plugin-styled-components": "6.12.0",
     "gatsby-remark-autolink-headers": "^5.9.0",
     "gatsby-remark-copy-linked-files": "^5.9.0",
     "gatsby-remark-images": "^6.9.1",
@@ -33,6 +35,7 @@
     "react-dom": "^17.0.1",
     "react-rotating-text": "^1.4.1",
     "sass": "^1.43.4",
+    "styled-components": "6.0.7",
     "typeface-montserrat": "^1.1.13"
   },
   "devDependencies": {

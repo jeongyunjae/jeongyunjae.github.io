@@ -18,7 +18,7 @@ function ProjectSection({ projects }) {
                 <IconButtonBar links={project.links} style={{ color: '#a8a8a8', fontSize: 24 }} />
               )}
             </div>
-            <div className="body">
+            {/* <div className="body">
               <Image className="thumbnail" src={project.thumbnailUrl} />
 
               {project.techStack && (
@@ -31,7 +31,7 @@ function ProjectSection({ projects }) {
                 </div>
               )}
               <div className="description">{project.description}</div>
-            </div>
+            </div> */}
           </div>
         ),
       )}
